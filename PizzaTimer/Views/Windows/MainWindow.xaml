@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:PizzaTimer"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <DockPanel>
+        <ScrollViewer Height="80" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" BorderThickness="3" BorderBrush="Gray">
+            <WrapPanel ItemHeight="40" ItemWidth="120">
+                <Button Background="Red"/>
+                <Button Background="Orange"/>
+                <Button Background="Yellow"/>
+                <Button Background="Green"/>
+                <Button Background="Blue"/>
+                <Button Background="Red"/>
+                <Button Background="Orange"/>
+                <Button Background="Yellow"/>
+                <Button Background="Green"/>
+                <Button Background="Blue"/>
+                <Button Background="Red"/>
+                <Button Background="Orange"/>
+                <Button Background="Yellow"/>
+                <Button Background="Green"/>
+                <Button Background="Blue"/>
+            </WrapPanel>
+        </ScrollViewer>
+    </DockPanel>
 </Window>
