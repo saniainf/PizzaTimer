@@ -41,7 +41,7 @@
                         <RowDefinition Height="3*" />
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Content="Name" DockPanel.Dock="Top"/>
+                    <Label Grid.Row="0" Content="Name" HorizontalContentAlignment="Center" DockPanel.Dock="Top"/>
                     <StackPanel Grid.Row="1" Orientation="Horizontal">
                         <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden">
                             <ListBoxItem>Item 1</ListBoxItem>
@@ -52,9 +52,9 @@
                             <ListBoxItem>Item 6</ListBoxItem>
                             <ListBoxItem>Item 7</ListBoxItem>
                         </ListBox>
-                        <Image >
-
-                        </Image>
+                        <TextBlock Text="00:12:25" FontSize="35" VerticalAlignment="Center">
+                            
+                        </TextBlock>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="2">
                         <Button Background="Blue" Width="40" Height="30"/>
