@@ -3,27 +3,71 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PizzaTimer"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:l="clr-namespace:PizzaTimer" 
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
-        <ScrollViewer Height="80" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" BorderThickness="3" BorderBrush="Gray">
-            <WrapPanel ItemHeight="40" ItemWidth="120">
-                <Button Background="Red"/>
-                <Button Background="Orange"/>
-                <Button Background="Yellow"/>
-                <Button Background="Green"/>
-                <Button Background="Blue"/>
-                <Button Background="Red"/>
-                <Button Background="Orange"/>
-                <Button Background="Yellow"/>
-                <Button Background="Green"/>
-                <Button Background="Blue"/>
-                <Button Background="Red"/>
-                <Button Background="Orange"/>
-                <Button Background="Yellow"/>
-                <Button Background="Green"/>
-                <Button Background="Blue"/>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File"/>
+            <MenuItem Header="Help"/>
+        </Menu>
+        <ScrollViewer DockPanel.Dock="Top" Height="80" VerticalScrollBarVisibility="Auto">
+            <WrapPanel>
+                <Button Background="Red" Width="120" Height="40"/>
+                <Button Background="Orange" Width="120" Height="40"/>
+                <Button Background="Yellow" Width="120" Height="40"/>
+                <Button Background="Green" Width="120" Height="40"/>
+                <Button Background="Blue" Width="120" Height="40"/>
+                <Button Background="Red" Width="120" Height="40"/>
+                <Button Background="Orange" Width="120" Height="40"/>
+                <Button Background="Yellow" Width="120" Height="40"/>
+                <Button Background="Green" Width="120" Height="40"/>
+                <Button Background="Blue" Width="120" Height="40"/>
+                <Button Background="Red" Width="120" Height="40"/>
+                <Button Background="Orange" Width="120" Height="40"/>
+                <Button Background="Yellow" Width="120" Height="40"/>
+                <Button Background="Green" Width="120" Height="40"/>
+                <Button Background="Blue" Width="120" Height="40"/>
+            </WrapPanel>
+        </ScrollViewer>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <WrapPanel>
+
+                <Grid Width="200" Height="160">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Content="Name" DockPanel.Dock="Top"/>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ListBoxItem>Item 1</ListBoxItem>
+                            <ListBoxItem>Item 2</ListBoxItem>
+                            <ListBoxItem>Item 3</ListBoxItem>
+                            <ListBoxItem>Item 4</ListBoxItem>
+                            <ListBoxItem>Item 5</ListBoxItem>
+                            <ListBoxItem>Item 6</ListBoxItem>
+                            <ListBoxItem>Item 7</ListBoxItem>
+                        </ListBox>
+                        <Image >
+
+                        </Image>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="2">
+                        <Button Background="Blue" Width="40" Height="30"/>
+                        <Button Background="Blue" Width="40" Height="30"/>
+                        <Button Background="Blue" Width="40" Height="30"/>
+                        <Button Background="Blue" Width="40" Height="30"/>
+                        <Button Background="Blue" Width="40" Height="30"/>
+                    </StackPanel>
+                </Grid>
+
+                <Button Background="AliceBlue" Width="200" Height="160"/>
+                <Button Background="Green" Width="200" Height="160"/>
+                <Button Background="Yellow" Width="200" Height="160"/>
             </WrapPanel>
         </ScrollViewer>
     </DockPanel>
